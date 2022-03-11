@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+body {
+    background-color: antiquewhite;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* background-color: black; */
+    padding: 2px;
+}
+
+nav ul:hover {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1), rgba(255, 0, 0, 0));
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    margin: 3px;
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 44px;
+}
+
+.brand {
+    font-weight: bolder;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.container {
+    padding: 12px;
+    min-height: 66vh;
+    margin: 22px;
+    border-radius: 12px;
+    background: url(img/bg.webp) no-repeat;
+    background-color: black;
+    background-size: cover;
+    color: white;
+}
+
+.songItem img {
+    width: 31px;
+    border-radius: 34px;
+}
+
+.songItemContainer {
+    margin-top: 12px;
+}
+
+.songItem {
+    /* color: black; */
+    color: white;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1), rgba(255, 0, 0, 0));
+    /* background-color: white; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    margin: 15px;
+    padding: 12px;
+    width: 52%;
+    justify-content: space-between;
+    /* justify-content:  space-around; */
+}
+
+.songItem:hover {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.songInfo {
+    position: absolute;
+    left: 2vw;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 10px;
+}
+
+.songInfo img {
+    opacity: 0;
+    height: 20px;
+    transition: 0.4s ease-in;
+}
+
+
+/* bottom */
+
+#myProgressBar {
+    width: 50%;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 12px;
+    padding: 2px;
+}
+
+.icons i {
+    margin-right: 12px;
+    padding: 2px;
+}
+
+.bottom {
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: sticky;
+    height: 140px;
+    bottom: 0;
+    background-color: black;
+    align-items: center;
+    flex-direction: column;
+}
